@@ -6,7 +6,6 @@ export async function GET() {
     console.log("Daily POST triggered");
     try {
         const secretKey = process.env.SECRET_KEY_SCRAPE;
-        console.log("Environment variable loaded:", secretKey ? "Yes" : "No");
     
         if (!secretKey) {
             console.log("Secret key is not set in environment variables");
