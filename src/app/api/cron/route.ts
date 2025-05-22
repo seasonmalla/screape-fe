@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export const runtime = 'edge';
 
-export async function GET(request: Request) {
+export async function GET() {
     console.log("Daily POST triggered");
     try {
         const secretKey = process.env.SECRET_KEY_SCRAPE;
